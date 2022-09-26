@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Chit</title>
+    <link rel="icon" href="https://tailwindcss.com/favicons/apple-touch-icon.png?v=3">
+
+    <!-- Primary Meta Tags -->
+    <title>Hacker Chit</title>
+    <meta name="title" content="Hacker Chit">
+    <meta name="description" content="Hacker Chit">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://digitalhunter.io/">
+    <meta property="og:title" content="Hacker Chit">
+    <meta property="og:description" content="Hacker Chit">
+    <meta property="og:image" content="./hacker-chit.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://digitalhunter.io/">
+    <meta property="twitter:title" content="Hacker Chit">
+    <meta property="twitter:description" content="Hacker Chit">
+    <meta property="twitter:image" content="./hacker-chit.jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="/node_modules//slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="/node_modules//slick-carousel/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="./Euclid Circular A Light.ttf">
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/dist/output.css">
+
+
+    <style>
+        /* Toggle B */
+        
+        input:checked~.dot {
+            transform: translateX(100%);
+            background-color: #ec4899;
+        }
+    </style>
+</head>
+
+<body class="dark:bg-[#191a1f]">
+
+
+
+    <div class="text-white bg-pink-500 p-2 text-center">Unlimited download! Starting from just $10/m</div>
+
+    <div class="container mx-auto lg:px-40">
+        <!-- Mini Nav -->
+        <nav class="md:flex justify-between px-5 lg:px-0 py-3 border-b border-pink-100 hidden">
+            <div class="space-x-3">
+                <a class="text-slate-500" href="#">About</a>
+                <a class="text-slate-500" href="#">Buy now!</a>
+                <a class="text-slate-500" href="#">Login/Join</a>
+            </div>
+            <div class="flex items-center space-x-3 text-xs">
+                <div class="border border-pink-500 rounded space-x-0">
+                    <button class="text-pink-500 py-1 px-2">A-</button>
+                    <button class="text-pink-500 py-1 px-2 bg-pink-300">A</button>
+                    <button class="text-pink-500 py-1 px-2">A+</button>
+                </div>
+                <div class="space-x-3">
+                    <i class="fa-brands fa-facebook-f text-slate-500"></i>
+                    <i class="fa-brands fa-instagram text-slate-500"></i>
+                    <i class="fa-brands fa-youtube text-slate-500"></i>
+                    <i class="fa-brands fa-linkedin text-slate-500"></i>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="z-10 bg-white dark:shadow-gray-800 dark:bg-[#191a1f] py-5 transition-all ease-in duration-150 animate__animated" id="main-nav">
+        <div class="container mx-auto px-5 lg:px-40">
+            <!-- Main Nav -->
+            <nav class="flex justify-between relative ">
+                <div class="space-x-3">
+                    <a href="#" class="text-2xl dark:text-slate-100 font-bold">Hacker Chit</a>
+
+                </div>
+                <div class="menu-btn w-5 h-5 flex justify-center items-center z-0 md:hidden">
+                    <i class="fa-solid fa-ellipsis-vertical dark:text-gray-200"></i>
+                </div>
+
+                <div class="flex gap-3 md:items-center md:space-x-3 flex-col md:flex-row items-start px-5 absolute md:static w-full md:w-auto h-0 lg:h-auto top-11 lg:top-auto left-0 nav-h-control overflow-hidden md:overflow-visible transition-all duration-300 bg-slate-50 lg:bg-transparent">
+                    <a class="text-slate-500 flex items-center space-x-1 w-full" href="#">
+                        <div class="w-2 h-2 bg-pink-500 rounded-full hidden"></div>
+                        <span class="text-pink-500">Home</span>
+                    </a>
+                    <a class="text-slate-500 flex items-center space-x-1 w-full" href="#">
+                        <div class="w-2 h-2 bg-pink-500 rounded-full hidden"></div>
+                        <span class="dark:text-grey-300">About</span>
+                    </a>
+                    <a class="text-slate-500 flex items-center space-x-1 w-full" href="#">
+                        <div class="w-2 h-2 bg-pink-500 rounded-full hidden"></div>
+                        <span class="dark:text-grey-300">Content</span>
+                    </a>
+                    <a class="text-slate-500 flex items-center space-x-1 w-full" href="#">
+                        <div class="w-2 h-2 bg-pink-500 rounded-full hidden"></div>
+                        <span class="dark:text-grey-300">Blog</span>
+                    </a>
+                </div>
+                <div class="md:flex items-center space-x-3 hidden">
+                    <button class="btn bg-pink-100 text-pink-500 hidden lg:flex">Subscribe</button>
+                    <label for="changeTheme" class="flex items-center cursor-pointer">
+                        <!-- toggle -->
+                        <div class="relative">
+                          <!-- input -->
+                          <input type="checkbox" id="changeTheme" class="sr-only">
+                          <!-- line -->
+                          <div class="block bg-gray-600 w-8 h-5 rounded-full"></div>
+                          <!-- dot -->
+                          <div class="dot absolute left-1 top-1 bg-white w-3 h-3 rounded-full transition"></div>
+                        </div>
+                        <!-- label -->
+                      </label>
+                    <i class="fa-solid fa-magnifying-glass dark:text-slate-100"></i>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div id="main" class="container mx-auto px-5 lg:px-40 mb-20">
+
+        <!-- Ads and Discount Carousel -->
+        <div class="bg-pink-100 p-2 rounded-lg mb-10">
+            <div class="space-x-2 text-center lg:text-left">
+                <button class="btn bg-pink-500 text-pink-100">Trending</button>
+                <span class="text-slate-500 text-sm block lg:inline">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, ipsam.</span>
+            </div>
+        </div>
+
+
+        <!-- Content -->
+        <!-- <div class="grid grid-cols-2 gap-5">
+            <div class="">
+                <img class="w-full" src="https://images.unsplash.com/photo-1664107014454-3d5758bc32e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80" alt="">
+            </div>
+            <div class="grid grid-cols-1 gap-5">
+                <div class="">
+                    <img class="h-56 w-full object-cover" src="https://images.unsplash.com/photo-1664103791874-56935f359dd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="">
+                </div>
+                <div class="grid grid-cols-2 gap-5">
+                    <div class="">
+                        <img class="w-full" src="https://images.unsplash.com/photo-1664103791874-56935f359dd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="">
+                    </div>
+                    <div class="">
+                        <img class="w-full" src="https://images.unsplash.com/photo-1664103791874-56935f359dd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="mb-3">
+            <h1 class="text-3xl dark:text-slate-100 font-bold">Today's top highlights</h1>
+            <h6 class="text-slate-500 dark:text-slate-300">Latest breaking news, pictures, videos, and special reports</h6>
+        </div>
+        <div class="grid md:grid-cols-2 gap-5">
+            <div class="group shadow hover:shadow-md dark:shadow-none shadow-pink-50 rounded-lg p-5 transition duration-150 hover:scale-[.99]">
+                <div class="overflow-hidden rounded-lg bg-slate-500 relative mb-3">
+                    <img class="w-full group-hover:scale-105 transition duration-150" src="https://images.unsplash.com/photo-1657214059153-4652d058965f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2146&q=80" alt="">
+                    <div class="absolute bottom-5 left-5 flex items-center bg-green-500 rounded-md px-2 py-1 space-x-1">
+                        <div class="w-2 h-2 bg-slate-50 rounded-full"></div>
+                        <button class="text-purple-50 text-xs font-bold">Programming</button>
+                    </div>
+                </div>
+                <div class="mb-5">
+                    <h6 class="text-md text-slate-500 dark:text-slate-500">Sponsored</h6>
+                    <h2 class="text-2xl font-bold mb-3 dark:text-slate-200">12 worst types of business accounts you follow on Twitter</h2>
+                    <p class="text-slate-500">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus a officiis necessitatibus. Quasi aliquam, adipisci omnis vel est ipsa reprehenderit nesciunt ad ullam eos debitis. Amet nulla vel praesentium doloremque.
+                    </p>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1657214059153-4652d058965f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2146&q=80" alt="">
+                    <div class="flex flex-col justify-between">
+                        <h6 class="text-md dark:text-slate-200">Hacker Mg Pyone</h6>
+                        <h6 class="text-xs dark:text-slate-200">Sep 26</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="group shadow hover:shadow-md dark:shadow-none shadow-pink-50 rounded-lg p-5 transition duration-150 hover:scale-[.99]">
+                <div class="overflow-hidden rounded-lg bg-slate-500 relative mb-3">
+                    <img class="w-full group-hover:scale-105 transition duration-150" src="https://images.unsplash.com/photo-1657214059153-4652d058965f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2146&q=80" alt="">
+                    <div class="absolute bottom-5 left-5 flex items-center bg-green-500 rounded-md px-2 py-1 space-x-1">
+                        <div class="w-2 h-2 bg-slate-50 rounded-full"></div>
+                        <button class="text-purple-50 text-xs font-bold">Programming</button>
+                    </div>
+                </div>
+                <div class="mb-5">
+                    <h6 class="text-md text-slate-500 dark:text-slate-500">Sponsored</h6>
+                    <h2 class="text-2xl font-bold mb-3 dark:text-slate-200">12 worst types of business accounts you follow on Twitter</h2>
+                    <p class="text-slate-500">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus a officiis necessitatibus. Quasi aliquam, adipisci omnis vel est ipsa reprehenderit nesciunt ad ullam eos debitis. Amet nulla vel praesentium doloremque.
+                    </p>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1657214059153-4652d058965f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2146&q=80" alt="">
+                    <div class="flex flex-col justify-between">
+                        <h6 class="text-md dark:text-slate-200">Hacker Mg Pyone</h6>
+                        <h6 class="text-xs dark:text-slate-200">Sep 26</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="group shadow hover:shadow-md dark:shadow-none shadow-pink-50 rounded-lg p-5 transition duration-150 hover:scale-[.99]">
+                <div class="overflow-hidden rounded-lg bg-slate-500 relative mb-3">
+                    <img class="w-full group-hover:scale-105 transition duration-150" src="https://images.unsplash.com/photo-1657214059153-4652d058965f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2146&q=80" alt="">
+                    <div class="absolute bottom-5 left-5 flex items-center bg-green-500 rounded-md px-2 py-1 space-x-1">
+                        <div class="w-2 h-2 bg-slate-50 rounded-full"></div>
+                        <button class="text-purple-50 text-xs font-bold">Programming</button>
+                    </div>
+                </div>
+                <div class="mb-5">
+                    <h6 class="text-md text-slate-500 dark:text-slate-500">Sponsored</h6>
+                    <h2 class="text-2xl font-bold mb-3 dark:text-slate-200">12 worst types of business accounts you follow on Twitter</h2>
+                    <p class="text-slate-500">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus a officiis necessitatibus. Quasi aliquam, adipisci omnis vel est ipsa reprehenderit nesciunt ad ullam eos debitis. Amet nulla vel praesentium doloremque.
+                    </p>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1657214059153-4652d058965f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2146&q=80" alt="">
+                    <div class="flex flex-col justify-between">
+                        <h6 class="text-md dark:text-slate-200">Hacker Mg Pyone</h6>
+                        <h6 class="text-xs dark:text-slate-200">Sep 26</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="group shadow hover:shadow-md dark:shadow-none shadow-pink-50 rounded-lg p-5 transition duration-150 hover:scale-[.99]">
+                <div class="overflow-hidden rounded-lg bg-slate-500 relative mb-3">
+                    <img class="w-full group-hover:scale-105 transition duration-150" src="https://images.unsplash.com/photo-1657214059153-4652d058965f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2146&q=80" alt="">
+                    <div class="absolute bottom-5 left-5 flex items-center bg-green-500 rounded-md px-2 py-1 space-x-1">
+                        <div class="w-2 h-2 bg-slate-50 rounded-full"></div>
+                        <button class="text-purple-50 text-xs font-bold">Programming</button>
+                    </div>
+                </div>
+                <div class="mb-5">
+                    <h6 class="text-md text-slate-500 dark:text-slate-500">Sponsored</h6>
+                    <h2 class="text-2xl font-bold mb-3 dark:text-slate-200">12 worst types of business accounts you follow on Twitter</h2>
+                    <p class="text-slate-500">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus a officiis necessitatibus. Quasi aliquam, adipisci omnis vel est ipsa reprehenderit nesciunt ad ullam eos debitis. Amet nulla vel praesentium doloremque.
+                    </p>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1657214059153-4652d058965f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2146&q=80" alt="">
+                    <div class="flex flex-col justify-between">
+                        <h6 class="text-md dark:text-slate-200">Hacker Mg Pyone</h6>
+                        <h6 class="text-xs dark:text-slate-200">Sep 26</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-b dark:border-slate-800 my-10"></div>
+
+        <div class="mb-5">
+            <h1 class="text-3xl font-bold dark:text-slate-200">Sponsored news</h1>
+            <h6 class="text-slate-500 dark:text-slate-300">Latest breaking news, pictures, videos, and special reports</h6>
+        </div>
+        <div class="slide">
+            <div class="group mr-5">
+                <div class="overflow-hidden rounded-lg bg-slate-500 relative mb-3">
+                    <img class="w-full group-hover:scale-105 transition duration-150" src="https://images.unsplash.com/photo-1657214059153-4652d058965f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2146&q=80" alt="">
+                    <div class="absolute bottom-5 left-5 flex items-center bg-green-500 rounded-md px-2 py-1 space-x-1">
+                        <div class="w-2 h-2 bg-slate-50 rounded-full"></div>
+                        <button class="text-purple-50 text-xs font-bold">Programming</button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <h2 class="text-lg font-bold mb-3 dark:text-slate-100">12 worst types of business accounts you follow on Twitter</h2>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1657214059153-4652d058965f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2146&q=80" alt="">
+                    <h6 class="text-xs dark:text-gray-400">Hacker Mg Pyone</h6>
+                    <div class="w-1 h-1 bg-slate-500 rounded-full"></div>
+                    <h6 class="text-xs dark:text-gray-400">Sep 26</h6>
+                </div>
+            </div>
+            <div class="group mr-5">
+                <div class="overflow-hidden rounded-lg bg-slate-500 relative mb-3">
+                    <img class="w-full group-hover:scale-105 transition duration-150" src="https://images.unsplash.com/photo-1657214059153-4652d058965f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2146&q=80" alt="">
+                    <div class="absolute bottom-5 left-5 flex items-center bg-green-500 rounded-md px-2 py-1 space-x-1">
+                        <div class="w-2 h-2 bg-slate-50 rounded-full"></div>
+                        <button class="text-purple-50 text-xs font-bold">Programming</button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <h2 class="text-lg font-bold mb-3 dark:text-slate-100">12 worst types of business accounts you follow on Twitter</h2>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1657214059153-4652d058965f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2146&q=80" alt="">
+                    <h6 class="text-xs dark:text-gray-400">Hacker Mg Pyone</h6>
+                    <div class="w-1 h-1 bg-slate-500 rounded-full"></div>
+                    <h6 class="text-xs dark:text-gray-400">Sep 26</h6>
+                </div>
+            </div>
+            <div class="group mr-5">
+                <div class="overflow-hidden rounded-lg bg-slate-500 relative mb-3">
+                    <img class="w-full group-hover:scale-105 transition duration-150" src="https://images.unsplash.com/photo-1657214059153-4652d058965f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2146&q=80" alt="">
+                    <div class="absolute bottom-5 left-5 flex items-center bg-green-500 rounded-md px-2 py-1 space-x-1">
+                        <div class="w-2 h-2 bg-slate-50 rounded-full"></div>
+                        <button class="text-purple-50 text-xs font-bold">Programming</button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <h2 class="text-lg font-bold mb-3 dark:text-slate-100">12 worst types of business accounts you follow on Twitter</h2>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1657214059153-4652d058965f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2146&q=80" alt="">
+                    <h6 class="text-xs dark:text-gray-400">Hacker Mg Pyone</h6>
+                    <div class="w-1 h-1 bg-slate-500 rounded-full"></div>
+                    <h6 class="text-xs dark:text-gray-400">Sep 26</h6>
+                </div>
+            </div>
+            <div class="group mr-5">
+                <div class="overflow-hidden rounded-lg bg-slate-500 relative mb-3">
+                    <img class="w-full group-hover:scale-105 transition duration-150" src="https://images.unsplash.com/photo-1657214059153-4652d058965f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2146&q=80" alt="">
+                    <div class="absolute bottom-5 left-5 flex items-center bg-green-500 rounded-md px-2 py-1 space-x-1">
+                        <div class="w-2 h-2 bg-slate-50 rounded-full"></div>
+                        <button class="text-purple-50 text-xs font-bold">Programming</button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <h2 class="text-lg font-bold mb-3 dark:text-slate-100">12 worst types of business accounts you follow on Twitter</h2>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1657214059153-4652d058965f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2146&q=80" alt="">
+                    <h6 class="text-xs dark:text-gray-400">Hacker Mg Pyone</h6>
+                    <div class="w-1 h-1 bg-slate-500 rounded-full"></div>
+                    <h6 class="text-xs dark:text-gray-400">Sep 26</h6>
+                </div>
+            </div>
+            <div class="group mr-5">
+                <div class="overflow-hidden rounded-lg bg-slate-500 relative mb-3">
+                    <img class="w-full group-hover:scale-105 transition duration-150" src="https://images.unsplash.com/photo-1657214059153-4652d058965f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2146&q=80" alt="">
+                    <div class="absolute bottom-5 left-5 flex items-center bg-green-500 rounded-md px-2 py-1 space-x-1">
+                        <div class="w-2 h-2 bg-slate-50 rounded-full"></div>
+                        <button class="text-purple-50 text-xs font-bold">Programming</button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <h2 class="text-lg font-bold mb-3 dark:text-slate-100">12 worst types of business accounts you follow on Twitter</h2>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1657214059153-4652d058965f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2146&q=80" alt="">
+                    <h6 class="text-xs dark:text-gray-400">Hacker Mg Pyone</h6>
+                    <div class="w-1 h-1 bg-slate-500 rounded-full"></div>
+                    <h6 class="text-xs dark:text-gray-400">Sep 26</h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#0f0f10] pt-10">
+        <div class="container mx-auto px-5 lg:px-40 mb-10">
+            <div class="flex flex-col lg:flex-row justify-between lg:space-x-10 items-start">
+                <div class="">
+                    <a href="#" class="text-2xl whitespace-nowrap dark:text-slate-100 font-bold">Hacker Chit</a>
+                </div>
+                <p class="text-slate-200 my-5 lg:my-0">
+                    The next-generation blog, news, and magazine theme for you to start sharing your stories today! This Bootstrap 5 based theme is ideal for all types of sites that deliver the news.
+                </p>
+                <div class="flex items-center space-x-2">
+                    <input type="text" class="border border-pink-500 px-1 py-1 rounded-lg" placeholder="Enter your email">
+                    <button class="btn bg-pink-500 outline-none text-pink-100">Trending</button>
+                </div>
+            </div>
+
+            <div class="border-b border-slate-700 my-10"></div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-y-14 lg:gap-x-14 mb-10">
+                <div class="">
+                    <h4 class="text-xl text-slate-50 mb-5">Recent Post</h4>
+                    <div class="mb-5">
+                        <div class="bottom-5 inline-block left-5 bg-green-500 rounded-md px-2 py-1 mb-2">
+                            <div class="flex items-center space-x-1">
+                                <div class="w-2 h-2 bg-slate-50 rounded-full"></div>
+                                <button class="text-purple-50 text-xs font-bold">Programming</button>
+                            </div>
+                        </div>
+                        <p class="text-slate-100">
+                            Up-coming business bloggers, you need to watch
+                        </p>
+                    </div>
+                    <div class="">
+                        <div class="bottom-5 inline-block left-5 bg-green-500 rounded-md px-2 py-1 mb-2">
+                            <div class="flex items-center space-x-1">
+                                <div class="w-2 h-2 bg-slate-50 rounded-full"></div>
+                                <button class="text-purple-50 text-xs font-bold">Programming</button>
+                            </div>
+                        </div>
+                        <p class="text-slate-100">
+                            Up-coming business bloggers, you need to watch
+                        </p>
+                    </div>
+                </div>
+
+                <div class="">
+                    <h4 class="text-xl text-slate-50 mb-5">Recent Post</h4>
+                    <ul class="text-slate-300 space-y-3">
+                        <li>Features</li>
+                        <li>Style Guide</li>
+                        <li>Contact us</li>
+                        <li>Contact us</li>
+                        <li>Contact us</li>
+                        <li>Contact us</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+
+                <div class="">
+                    <h4 class="text-xl text-slate-50 mb-5">Get Regular Updates</h4>
+                    <ul class="text-slate-300 space-y-3">
+                        <li class="space-x-1"><i class="fa-brands fa-youtube"></i> <span>Features</span></li>
+                        <li class="space-x-1"><i class="fa-brands fa-youtube"></i> <span>Features</span></li>
+                        <li class="space-x-1"><i class="fa-brands fa-youtube"></i> <span>Features</span></li>
+                        <li class="space-x-1"><i class="fa-brands fa-youtube"></i> <span>Features</span></li>
+                        <li class="space-x-1"><i class="fa-brands fa-youtube"></i> <span>Features</span></li>
+                        <li class="space-x-1"><i class="fa-brands fa-youtube"></i> <span>Features</span></li>
+                        <li class="space-x-1"><i class="fa-brands fa-youtube"></i> <span>Features</span></li>
+                    </ul>
+                </div>
+
+                <div class="">
+                    <h4 class="text-xl text-slate-50 font-bold mb-5">Our mobile App</h4>
+                    <p class="text-slate-300 mb-3">
+                        Download our App and get the latest Breaking News Alerts and latest headlines and daily articles near you.
+                    </p>
+                    <div class="flex space-x-3">
+                        <button class="btn bg-pink-100 text-pink-500">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>Subscribe</span>
+                        </button>
+                        <button class="btn bg-pink-100 text-pink-500">
+                            <i class="fa-brands fa-google-play"></i>
+                            <span>Play Store</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <h4 class="text-xl text-slate-50 mb-5">Hot topics</h4>
+                <div class="text-sm text-slate-400">
+                    <a href="#" class="mr-3">Covid-19</a>
+                    <a href="#" class="mr-3">Politics</a>
+                    <a href="#" class="mr-3">Entertainment</a>
+                    <a href="#" class="mr-3">Entertainment</a>
+                    <a href="#" class="mr-3">Entertainment</a>
+                    <a href="#" class="mr-3">Entertainment</a>
+                    <a href="#" class="mr-3">Entertainment</a>
+                    <a href="#" class="mr-3">Entertainment</a>
+                    <a href="#" class="mr-3">Entertainment</a>
+                    <a href="#" class="mr-3">Entertainment</a>
+                    <a href="#" class="mr-3">Entertainment</a>
+                    <a href="#" class="mr-3">Entertainment</a>
+                    <a href="#" class="mr-3">Entertainment</a>
+                    <a href="#" class="mr-3">Entertainment</a>
+                    <a href="#" class="mr-3">Entertainment</a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#0b0b0b] py-10">
+            <div class="container mx-auto lg:px-40 flex flex-col lg:flex-row text-center justify-between">
+                <h6 class="text-slate-200">©2022 Webestica. All rights reserved</h6>
+                <div class="space-x-3 text-slate-50">
+                    <a class="" href="#">Privacy</a>
+                    <a class="" href="#">Teams</a>
+                    <a class="" href="#">Cookies</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <!-- Package -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script src="/node_modules/waypoints/lib/noframework.waypoints.min.js"></script>
+    <script src="./customize.js"></script>
+
+    <script>
+        $('.slide').slick({
+            dots: false,
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: false,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: false
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+
+</body>
+
+</html>
+
+</html>
+
+</html>
