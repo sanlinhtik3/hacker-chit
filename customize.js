@@ -12,10 +12,10 @@ var waypoint = new Waypoint({
     handler: function(direction) {
         if (direction === "down") {
             console.log('down')
-            mainNav.classList.add('fixed', 'top-1', 'w-full', 'shadow', 'animate__bounce')
+            mainNav.classList.add('fixed', 'top-0', 'w-full', 'shadow', 'animate__bounce')
         } else {
             console.log('up')
-            mainNav.classList.remove('fixed', 'top-1', 'w-full', 'shadow', 'animate__bounce')
+            mainNav.classList.remove('fixed', 'top-0', 'w-full', 'shadow', 'animate__bounce')
         }
     },
     offset: '0%'

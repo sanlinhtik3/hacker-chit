@@ -29,12 +29,24 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <link rel="stylesheet" href="/node_modules//slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="/node_modules//slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="./node_module/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="./node_module/slick-carousel/slick/slick-theme.css">
 
     <link rel="stylesheet" href="./Euclid Circular A Light.ttf">
-    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="./node_module/@fortawesome/fontawesome-free/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Euclid Circular A Light']
+                    }
+                },
+            },
+        }
+    </script>
 
 
     <style>
@@ -108,7 +120,7 @@
                     </a>
                 </div>
                 <div class="md:flex items-center space-x-3 hidden">
-                    <button class="btn bg-pink-100 text-pink-500 hidden lg:flex">Subscribe</button>
+                    <button class="btn px-3 py-1 rounded-lg border border-slate-200 outline bg-pink-100 text-pink-500 hidden lg:flex">Subscribe</button>
                     <label for="changeTheme" class="flex items-center cursor-pointer">
                         <!-- toggle -->
                         <div class="relative">
@@ -132,7 +144,7 @@
         <!-- Ads and Discount Carousel -->
         <div class="bg-pink-100 p-2 rounded-lg mb-10">
             <div class="space-x-2 text-center lg:text-left">
-                <button class="btn bg-pink-500 text-pink-100">Trending</button>
+                <button class="btn px-3 py-1 rounded-lg border border-slate-200 outline bg-pink-500 text-pink-100">Trending</button>
                 <span class="text-slate-500 text-sm block lg:inline">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, ipsam.</span>
             </div>
         </div>
@@ -370,7 +382,7 @@
                 </p>
                 <div class="flex items-center space-x-2">
                     <input type="text" class="border border-pink-500 px-1 py-1 rounded-lg" placeholder="Enter your email">
-                    <button class="btn bg-pink-500 outline-none text-pink-100">Trending</button>
+                    <button class="btn px-3 py-1 rounded-lg border border-slate-200 outline bg-pink-500 outline-none text-pink-100">Trending</button>
                 </div>
             </div>
 
@@ -435,11 +447,11 @@
                         Download our App and get the latest Breaking News Alerts and latest headlines and daily articles near you.
                     </p>
                     <div class="flex space-x-3">
-                        <button class="btn bg-pink-100 text-pink-500">
+                        <button class="btn px-3 py-1 rounded-lg border border-slate-200 outline bg-pink-100 text-pink-500">
                             <i class="fa-brands fa-apple"></i>
                             <span>Subscribe</span>
                         </button>
-                        <button class="btn bg-pink-100 text-pink-500">
+                        <button class="btn px-3 py-1 rounded-lg border border-slate-200 outline bg-pink-100 text-pink-500">
                             <i class="fa-brands fa-google-play"></i>
                             <span>Play Store</span>
                         </button>
@@ -485,8 +497,8 @@
 
     <!-- Package -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/node_modules/slick-carousel/slick/slick.min.js"></script>
-    <script src="/node_modules/waypoints/lib/noframework.waypoints.min.js"></script>
+    <script src="./node_module/slick-carousel/slick/slick.min.js"></script>
+    <script src="./node_module/waypoints/lib/noframework.waypoints.min.js"></script>
     <script src="./customize.js"></script>
 
     <script>
